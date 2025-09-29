@@ -1,0 +1,30 @@
+# Step 1: Import NumPy
+import numpy as np
+arr = np.arange(1, 21)
+
+print("Array:", arr)
+print("Sum:", arr.sum())
+print("Mean:", arr.mean())
+print("Median:", np.median(arr))
+print("Standard Deviation:", arr.std())
+
+# Indices of elements greater than 10
+indices = np.where(arr > 10)
+print("Indices where elements > 10:", indices)arr2d = np.arange(1, 17).reshape(4, 4)
+print("4x4 Array:\n", arr2d)
+
+print("Transpose:\n", arr2d.T)
+
+print("Row-wise sum:", arr2d.sum(axis=1))
+print("Column-wise sum:", arr2d.sum(axis=0))
+a = np.random.randint(1, 21, (3, 3))
+b = np.random.randint(1, 21, (3, 3))
+
+print("Array A:\n", a)
+print("Array B:\n", b)
+
+print("Addition:\n", a + b)
+print("Subtraction:\n", a - b)
+print("Multiplication:\n", a * b)
+
+print("Dot Product:\n", np.dot(a, b))
